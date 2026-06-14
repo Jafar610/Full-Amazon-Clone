@@ -2,7 +2,37 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <>
+      <section>
+        <div className='flex'>
+          {/* logo */}
+          <div>
+            <img src="" alt="" />
+          </div>
+
+          {/* Location */}
+          <div>
+
+            <div>
+
+            </div>
+
+            <div>
+
+            </div>
+
+          </div>
+
+          {/* search bar */}
+
+          <div>
+            
+          </div>
+
+        </div>
+      </section>
+
+    </>
   )
 }
 
