@@ -18,7 +18,8 @@ function Header() {
             </div>
 
             <div>
-
+              <p>Location</p>
+              <p>Ethiopia</p>
             </div>
 
           </div>
@@ -26,7 +27,11 @@ function Header() {
           {/* search bar */}
 
           <div>
-            
+            <select name="" id="">
+              <option value="">All</option>
+            </select>
+            <input type="text" />
+            <button>Search</button>
           </div>
 
         </div>
