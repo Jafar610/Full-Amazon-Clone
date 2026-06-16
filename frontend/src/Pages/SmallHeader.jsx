@@ -2,7 +2,16 @@ import React from 'react'
 
 function SmallHeader() {
   return (
-    <div>SmallHeader</div>
+    <>
+    <section>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    </>
   )
 }
 
