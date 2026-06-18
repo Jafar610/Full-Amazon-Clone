@@ -5,10 +5,15 @@ function SmallHeader() {
     <>
     <section>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <img src="" alt="" />
+          All
+        </li>
+        <li>Todays Deals</li>
+        <li>Customer Service</li>
+        <li>Registry</li>
+        <li>Gift Cards</li>
+        <li>Registry</li>
       </ul>
     </section>
     </>
