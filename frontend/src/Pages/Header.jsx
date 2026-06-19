@@ -4,10 +4,10 @@ function Header() {
   return (
     <>
       <section>
-        <div className='flex'>
+        <div className='flex bg-[#131921] text-white items-center justify-between p-2'>
           {/* logo */}
-          <div>
-            <img src="" alt="" />
+          <div className=''>
+            <img src="" alt="" className='w-40' />
           </div>
 
           {/* Location */}
