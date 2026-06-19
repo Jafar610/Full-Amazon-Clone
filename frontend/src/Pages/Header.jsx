@@ -11,7 +11,7 @@ function Header() {
           </div>
 
           {/* Location */}
-          <div>
+          <div className='flex items-center gap-2'>
 
             <div>
 
@@ -26,7 +26,7 @@ function Header() {
 
           {/* search bar */}
 
-          <div>
+          <div className='flex items-center gap-2'>
             <select name="" id="">
               <option value="">All</option>
             </select>
