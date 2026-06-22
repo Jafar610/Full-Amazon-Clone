@@ -13,6 +13,18 @@ function Footer() {
             <div>
               <p>Contact Us</p>
             </div>
+            <div>
+              <p>Privacy Policy</p>
+            </div>
+
+            <div>
+              <p></p>
+            </div>
+
+            <div>
+              <p className='text-sm'>&copy; 2024 Amazon Clone. All rights reserved.</p>
+            </div>
+
           </div>
          </div>
       </section>
