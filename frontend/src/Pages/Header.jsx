@@ -7,7 +7,9 @@ function Header() {
         <div className='flex bg-[#131921] text-white items-center justify-between p-2'>
           {/* logo */}
           <div className=''>
-            <img src="" alt="" className='w-40' />
+            <a href="/">
+              <img src="https://pngimg.com/uploads/amazon/small/amazon_PNG25.png" alt=""  className='w-40'/>
+            </a>
           </div>
 
           {/* Location */}
