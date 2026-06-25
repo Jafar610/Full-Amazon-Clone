@@ -1,7 +1,7 @@
 import React from "react";
 import Location from "@mui/icons-material/LocationOnOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+
 import ArrowDropDown from "@mui/icons-material/ArrowDropDownOutlined";
 function Header() {
   return (
@@ -32,7 +32,7 @@ function Header() {
 
           <div className="flex items-center gap-2">
             <div>
-              <MenuOutlinedIcon />
+              <ArrowDropDown />
               <select name="" id="">
                 <option value="">All</option>
               </select>
