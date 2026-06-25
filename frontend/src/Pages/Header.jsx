@@ -1,5 +1,8 @@
 import React from "react";
-import Location from '@mui/icons-material/LocationOnOutlined';
+import Location from "@mui/icons-material/LocationOnOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
+import ArrowDropDown from "@mui/icons-material/ArrowDropDownOutlined";
 function Header() {
   return (
     <>
@@ -28,11 +31,15 @@ function Header() {
           {/* search bar */}
 
           <div className="flex items-center gap-2">
-            <select name="" id="">
-              <option value="">All</option>
-            </select>
+            <div>
+              <MenuOutlinedIcon />
+              <select name="" id="">
+                <option value="">All</option>
+              </select>
+            </div>
+
             <input type="text" />
-            <button>Search</button>
+            <SearchOutlinedIcon />
           </div>
         </div>
       </section>
