@@ -41,6 +41,28 @@ function Header() {
             <input type="text" />
             <SearchOutlinedIcon />
           </div>
+          {/* language */}
+          <div>
+            <img src="" alt="" />
+            <select name="" id="">
+              <option value="">EN</option>
+            </select>
+          </div>
+          {/* account */}
+          <div>
+            <p>Hello, Sign in</p>
+            <p>Account & Lists</p>
+          </div>
+          {/* orders */}
+          <div>
+            <p>Returns</p>
+            <p>& Orders</p>
+          </div>
+          {/* cart */}
+          <div>
+            <p>Cart</p>
+            <p>0</p>
+          </div>
         </div>
       </section>
     </>
