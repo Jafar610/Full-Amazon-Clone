@@ -31,25 +31,24 @@ function Header() {
           {/* search bar */}
 
           <div className="flex items-center gap-2">
-            <div>
+            <div className="flex items-center gap-2 bg-white text-black p-1 rounded-md">
               <ArrowDropDown />
               <select name="" id="">
                 <option value="">All</option>
               </select>
             </div>
-
             <input type="text" />
             <SearchOutlinedIcon />
           </div>
           {/* language */}
-          <div>
+          <div className="flex items-center gap-2">
             <img src="" alt="" />
             <select name="" id="">
               <option value="">EN</option>
             </select>
           </div>
           {/* account */}
-          <div>
+          <div className="flex items-center gap-2">
             <p>Hello, Sign in</p>
             <p>Account & Lists</p>
           </div>
