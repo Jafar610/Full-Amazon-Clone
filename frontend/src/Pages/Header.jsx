@@ -2,12 +2,13 @@ import React from "react";
 import Location from "@mui/icons-material/LocationOnOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ArrowDropDown from "@mui/icons-material/ArrowDropDownOutlined";
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 function Header() {
   return (
     <>
       <section>
-        <div className="flex bg-[#131921] text-white items-center justify-start gap-6 p-1 px-4">
+        <div className="flex bg-[#131921] text-white items-center justify-start gap-4 p-1 px-4">
           {/* logo */}
           <div className="hover:border-2 border-white rounded-md p-1">
             <a href="/">
@@ -77,9 +78,11 @@ function Header() {
             <p className="font-semibold">& Orders</p>
           </div>
           {/* cart */}
-          <div>
+          <div className="flex items-center gap-1">
+            <ShoppingCartOutlinedIcon className="text-[50px]" />
+            <span className="font-semibold ">0</span>
             <p>Cart</p>
-            <p>0</p>
+            
           </div>
         </div>
       </section>
