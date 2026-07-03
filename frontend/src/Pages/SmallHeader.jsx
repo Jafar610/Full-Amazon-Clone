@@ -3,8 +3,8 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 function SmallHeader() {
   return (
     <>
-    <section>
-      <ul className='flex items-center gap-4 bg-[#232F3E] text-white p-2'>
+    <section >
+      <ul className='md:flex sm:hidden max-sm:hidden items-center gap-4 bg-[#232F3E] text-white p-2'>
         <li className='flex items-center gap-2'>
           <MenuOutlinedIcon />
           All
