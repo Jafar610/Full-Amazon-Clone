@@ -1,4 +1,3 @@
-import React from 'react'
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 function SmallHeader() {
   return (

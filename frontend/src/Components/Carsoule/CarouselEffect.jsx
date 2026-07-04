@@ -1,4 +1,3 @@
-import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { carouselData } from "./data";
@@ -10,6 +9,7 @@ function CarouselEffect() {
         infiniteLoop={true}
         showThumbs={false}
         showStatus={false}
+        showIndicators={false}
         interval={2000}
       >
         {carouselData.map((image, index) => (
@@ -18,6 +18,8 @@ function CarouselEffect() {
           </div>
         ))}
       </Carousel>
+        {/* linear-gradient in carousel like shadow at the bottom */}
+      <div className="w-full h-80 absolute bottom-0 left-0 bg-gradient-to-t from-gray-300 to-transparent"></div>
     </div>
   );
 }
