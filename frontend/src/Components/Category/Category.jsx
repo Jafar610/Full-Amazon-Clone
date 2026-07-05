@@ -8,6 +8,7 @@ function Category() {
           key={index}
           name={category.category_name}
           image={category.category_image}
+          link={category.link}
         />
       ))}
     </div>
