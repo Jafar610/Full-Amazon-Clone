@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import { carouselData } from "./data";
 function CarouselEffect() {
   return (
-    <div>
+    <div className="relative">
       <Carousel
         autoplay={true}
         infiniteLoop={true}
