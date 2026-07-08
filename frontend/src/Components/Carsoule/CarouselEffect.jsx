@@ -10,7 +10,6 @@ function CarouselEffect() {
         showThumbs={false}
         showStatus={false}
         showIndicators={false}
-        interval={2000}
       >
         {carouselData.map((image, index) => (
           <div key={index}>
