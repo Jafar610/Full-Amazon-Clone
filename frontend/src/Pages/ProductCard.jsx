@@ -1,18 +1,19 @@
-import {Rating} from 'react-simple-star-rating'
-function ProductCard() {
+import Rating from '@mui/material/Rating';
+import CurrencyFormat from '../Components/CurrencyFormat/CurrencyFormat';
+function ProductCard({ product }) {
+  const {image, title, price, rating} = product
   return (
     <div>
-      <img src="" alt="" />
-      <h2>Product Name</h2>
-      <Rating />
-
+      <img src={image} alt={title} />
+      <h2>{title}</h2>
+      <div>
+         <Rating defaultValue={rating.rate} precision={0.1} />
       {/* count */}
-      <small></small>
-
-      <p>Price</p>
-
+      <small>{rating.count}</small>
+      </div>
+      
+      <p><CurrencyFormat amount={price} /></p>
       <button>Add to cart</button>
-
     </div>
   )
 }
