@@ -1,21 +1,25 @@
-import Rating from '@mui/material/Rating';
-import CurrencyFormat from '../Components/CurrencyFormat/CurrencyFormat';
+import Rating from "@mui/material/Rating";
+import CurrencyFormat from "../Components/CurrencyFormat/CurrencyFormat";
 function ProductCard({ product }) {
-  const {image, title, price, rating} = product
+  const { image, title, price, rating } = product;
   return (
-    <div>
-      <img src={image} alt={title} />
+    <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center">
+      <img src={image} alt={title}  className="w-full h-64 object-contain"/>
       <h2>{title}</h2>
-      <div>
-         <Rating defaultValue={rating.rate} precision={0.1} />
-      {/* count */}
-      <small>{rating.count}</small>
+      <div className="flex items-center gap-2">
+        <Rating defaultValue={rating.rate} precision={0.1} />
+        {/* count */}
+        <small>{rating.count}</small>
       </div>
-      
-      <p><CurrencyFormat amount={price} /></p>
-      <button>Add to cart</button>
+
+      <p className="text-lg font-semibold align-middle">
+        <CurrencyFormat amount={price} />
+      </p>
+      <button className="bg-yellow-500 text-black py-2 px-4 rounded hover:bg-yellow-600 w-full mt-auto">
+        Add to cart
+      </button>
     </div>
-  )
+  );
 }
 
-export default ProductCard
+export default ProductCard;

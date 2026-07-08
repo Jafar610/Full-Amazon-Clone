@@ -1,6 +1,7 @@
 import CarouselEffect from './Components/Carsoule/CarouselEffect'
 import Category from './Components/Category/Category'
 import Navbar from './Components/Header/Navbar'
+import Product from './Components/Product/Product'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
       <CarouselEffect/>
       <Category/>
+      <Product/>
     </>
   )
 }

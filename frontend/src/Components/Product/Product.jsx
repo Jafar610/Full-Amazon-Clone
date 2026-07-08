@@ -1,6 +1,6 @@
 import axios from 'axios'
 import  { useEffect, useState } from 'react'
-import ProductCard from '../Pages/ProductCard'
+import ProductCard from '../../Pages/ProductCard'
 function Product() {
     const [products, setProducts] = useState([])
 
@@ -17,7 +17,7 @@ function Product() {
     }, [])
 
   return (
-    <div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 mt-5">
         {
             products.map((product) => (
                 <ProductCard key={product.id} product={product} />
