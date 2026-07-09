@@ -4,6 +4,7 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,13 +16,13 @@ function Header() {
         <div className="flex bg-[#131921] text-white items-center justify-between gap-2 md:gap-5 p-2 md:p-1 px-2 md:px-4">
           {/* Logo */}
           <div className="flex-shrink-0 hover:border-1 border-white rounded-md p-1 transition">
-            <a href="/">
+            <Link to="/">
               <img
                 src="https://pngimg.com/uploads/amazon/small/amazon_PNG25.png"
                 alt="Amazon Logo"
                 className="w-20 md:w-28 h-auto"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Location - Hidden on mobile */}
@@ -147,24 +148,20 @@ function Header() {
                 </div>
               </div>
 
-              <a
-                href="#"
-                className="py-2 text-gray-100 text-sm hover:text-[#febd69] transition"
-              >
+              <Link to="/signup" className="py-2 text-gray-100 text-sm hover:text-[#febd69] transition">
                 Hello, Sign in
-              </a>
-              <a
-                href="#"
+              </Link>
+              
+              <Link to="/account"
                 className="py-2 text-gray-100 text-sm font-semibold hover:text-[#febd69] transition"
               >
                 Account & Lists
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link to="/orders"
                 className="py-2 text-gray-100 text-sm hover:text-[#febd69] transition"
               >
                 Returns & Orders
-              </a>
+              </Link>
             </div>
           </div>
         )}
