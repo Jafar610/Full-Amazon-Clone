@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Location from "@mui/icons-material/LocationOnOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
