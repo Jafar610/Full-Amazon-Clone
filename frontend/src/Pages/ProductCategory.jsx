@@ -10,7 +10,6 @@ function ProductCategory() {
     useEffect(()=>{
         axios.get(`${ProductUrl}/category/${categoryName}`).then((res)=>{
             setProduct(res.data);
-            console.log(res.data);
         })
         .catch((error)=>{
             console.log(error);
@@ -27,8 +26,7 @@ function ProductCategory() {
             {product.map((items) => (
         <ProductCard key={items.id} product={items} />
       ))}
-        </div>
-        
+        </div> 
     </div>
     </>
   )

@@ -1,7 +1,8 @@
 import Rating from "@mui/material/Rating";
 import CurrencyFormat from "../Components/CurrencyFormat/CurrencyFormat";
+import { Link } from "react-router-dom";
 function ProductCard({ product }) {
-  const { image, title, price, rating } = product;
+  const { image, title, price, rating, id } = product;
   return (
     <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center">
       <img src={image} alt={title}  className="w-full h-64 object-contain"/>
@@ -16,7 +17,7 @@ function ProductCard({ product }) {
         <CurrencyFormat amount={price} />
       </p>
       <button className="bg-yellow-500 text-black py-2 px-4 rounded hover:bg-yellow-600 w-full mt-auto">
-        Add to cart
+       <Link to = {`/product/${id}`}> Add to cart </Link>
       </button>
     </div>
   );

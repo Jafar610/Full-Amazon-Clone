@@ -4,6 +4,7 @@ import Orders from '../../pages/orders'
 import Signup from '../../Pages/Auth/Singup'
 import LandingPage from '../../Pages/LandingPage'
 import ProductCategory from '../../Pages/ProductCategory'
+import ProductDetail from '../../Pages/ProductDetail'
 function SharedLayout() {
   return (
     <>
@@ -14,6 +15,7 @@ function SharedLayout() {
           <Route path="orders" element={<Orders/>} />
           <Route path="signup" element={<Signup/>} />
           <Route path="categories/:categoryName" element={<ProductCategory/>} />
+          <Route path="product/:id" element={<ProductDetail/>} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Routes>
       </Router>
