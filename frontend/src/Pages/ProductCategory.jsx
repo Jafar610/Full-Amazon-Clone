@@ -1,12 +1,11 @@
 import { useParams } from "react-router-dom"
-import { ProductUrl } from "../API/endpoint"
+import { ProductUrl } from "../API/endpoint";
 import { useState, useEffect } from "react";
 import ProductCard from "../Pages/ProductCard";
 import axios from "axios";
 function ProductCategory() {
     const { categoryName } = useParams();
     const [product, setProduct] = useState([]);
-
     useEffect(()=>{
         axios.get(`${ProductUrl}/category/${categoryName}`).then((res)=>{
             setProduct(res.data);
