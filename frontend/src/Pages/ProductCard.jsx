@@ -5,7 +5,9 @@ function ProductCard({ product }) {
   const { image, title, price, rating, id } = product;
   return (
     <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center">
+      <Link to={`/product/${id}`}>
       <img src={image} alt={title}  className="w-full h-64 object-contain"/>
+      </Link>
       <h2>{title}</h2>
       <div className="flex items-center gap-2">
         <Rating defaultValue={rating.rate} precision={0.1} />
