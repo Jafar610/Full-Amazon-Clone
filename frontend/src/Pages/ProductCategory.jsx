@@ -10,7 +10,7 @@ function ProductCategory() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // setLoading(true);
+    setLoading(true);
     axios
       .get(`${ProductUrl}/category/${categoryName}`)
       .then((res) => {
