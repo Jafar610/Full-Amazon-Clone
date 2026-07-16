@@ -1,7 +1,7 @@
 import Rating from "@mui/material/Rating";
 import CurrencyFormat from "../Components/CurrencyFormat/CurrencyFormat";
 import { Link } from "react-router-dom";
-function ProductCard({ product }) {
+function ProductCard({ product, display }) {
   const { image, title, price, rating, id } = product;
   return (
     <div className="border border-gray-300 rounded-lg shadow-md overflow-hidden p-4 flex flex-col items-center">
