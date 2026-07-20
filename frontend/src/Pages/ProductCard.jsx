@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ProductCard({ product, flex }) {
   const { image, title, price, rating, id, description } = product;
 
-  const shortTitle = title?.length > 50 ? `${title.slice(0, 50).trimEnd()}...` : title;
+  const shortTitle = title?.length > 30 ? `${title.slice(0, 30).trimEnd()}...` : title;
   const isHorizontal = Boolean(flex);
 
   return (
@@ -25,7 +25,7 @@ function ProductCard({ product, flex }) {
             {shortTitle}
           </h2>
           {
-            isHorizontal?<p className="mt-0 w-250 font-normal text-lg">{description}</p>:''
+            isHorizontal?<p className="mt-1 w-250 font-normal text-lg">{description}</p>:''
           }
           <div className="flex items-center gap-2 mt-2">
             <Rating defaultValue={rating.rate} precision={0.1} />
